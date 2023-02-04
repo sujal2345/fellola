@@ -23,7 +23,10 @@ class Post(models.Model):
     third_image = models.ImageField(null=True, blank=True,upload_to="image/")
     type=models.CharField(max_length=100,default='')
     subtype=models.CharField(max_length=100,default='')
+    area=models.IntegerField(null=True, blank=True, default=0)
+    landmarks =models.CharField(null=True, blank=True, default='',max_length=1000)
     price=models.IntegerField(null=True, blank=True, default=0)
+    contact=models.IntegerField(null=True, blank=True, default=0)
     code=models.CharField(null=True, blank=True, default='1234',max_length=20)
     def __str__(self):
         return str(self.usernames)

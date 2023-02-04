@@ -12,8 +12,8 @@ class PostForm(forms.ModelForm):
             'address':forms.TextInput(attrs={'class':'form-control'}),
             'usernames':forms.TextInput(attrs={'class':'form-control', 'value':'','id':'elder','type':'hidden'}),
             'facilities':forms.TextInput(attrs={'class':'form-control'}),
-            'address':forms.TextInput(attrs={'class':'form-control'}),
             'type':forms.Select(choices=choices,attrs={'class':'form-control'}),
             'subtype':forms.Select(choices=choices2,attrs={'class':'form-control'}),
-            'price':forms.NumberInput(attrs={'class':'form-control'}),   
+            'price':forms.NumberInput(attrs={'class':'form-control'}),  
+            'contact':forms.NumberInput(attrs={'class':'form-control'}), 
         }
